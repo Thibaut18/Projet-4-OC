@@ -1,0 +1,18 @@
+.intro-container {
+    @include flexcenterXY;
+    background-color: $background;
+    min-height: 287.5px;
+    padding: 0px 18px 0px 18px;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    h2 {
+        font-size: 24px;
+        margin: 0;
+}
+}
+.intro-container h3 {
+    margin: 0px 0px 22px 0px;
+font-size: 16px;
+font-weight: normal;
+}
