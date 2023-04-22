@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -17,166 +17,146 @@
 />
 </head>
 <nav>
-    <a href="index.html" class="txtDecorationNone"><i class="fa-solid fa-arrow-left"></i></a>
+    <a href="../index.html" class="arrow-left"><i class="fa-solid fa-arrow-left"></i></a>
         <img class="logo" alt="Logo du site OhMyFood" src="../assets/images/logo/ohmyfood@2x.svg">
 </nav>
 <main>
     <section class="menu">
-        <img src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat du restaurant Le délice des sens">
+        <img src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat du restaurant La palette du goût">
+        <div class="menu-full-box">
         <div class="menu-container">
                 <h1>Le délice des sens</h1>
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart like-icon"></i>
                 <article class="menu-article">
                     <h2>ENTRÉES</h2>
-                            <button>
-                                <div class="txt-container">
+                                <div class="menu-card">
                                     <h3>Tartare de thon</h3>
                                     <div class="tasteandprice-txt">
                                         <p>Assaisonné au yuzu</p>
-                                        <strong>25€</strong>
+                                        <strong class="price">25€</strong>
                                     </div>
                                 </div>
                                 <div class="check-box flexcenterXY">
                                     <i class="fa-solid fa-check check-icon"></i>
                                 </div>
-                            </button>
-                            <button>
-                                <div class="txt-container">
-                                    <h4>Bouchée de homard croustillant</h4>
+                                <div class="menu-card">
+                                    <h3>Bouchée de homard croustillant</h3>
                                     <div class="tasteandprice-txt">
                                         <p>Et sa farandole de petits légumes</p>
-                                        <strong>35€</strong>
+                                        <strong class="price">35€</strong>
                                     </div>
                                 </div>
                                 <div class="check-box flexcenterXY">
                                     <i class="fa-solid fa-check check-icon"></i>
                                 </div>
-                            </button>
-                            <button>
-                                <div class="txt-container">
-                                    <h4>Velouté de cèpes</h4>
+                                <div class="menu-card">
+                                    <h3>Velouté de cèpest</h3>
                                     <div class="tasteandprice-txt">
                                         <p>Aux truffes</p>
-                                        <strong>20€</strong>
+                                        <strong class="price">20€</strong>
                                     </div>
                                 </div>
                                 <div class="check-box flexcenterXY">
                                     <i class="fa-solid fa-check check-icon"></i>
                                 </div>
-                            </button>
                 </article>
                 <article class="menu-article">
-                    <h3>PLATS</h3>
-                            <button>
-                                <div class="txt-container">
-                                    <h4>Poulet rôti aux herbes de Provence</h4>
+                    <h2>PLATS</h2>
+                                <div class="menu-card">
+                                    <h3>Poulet rôti aux herbes de Provence</h3>
                                     <div class="tasteandprice-txt">
                                         <p>Et sa crème de truffe</p>
-                                        <strong>40€</strong>
+                                        <strong class="price">40€</strong>
                                     </div>
                                 </div>
                                 <div class="check-box flexcenterXY">
                                     <i class="fa-solid fa-check check-icon"></i>
                                 </div>
-                            </button>
-                            <button>
-                                <div class="txt-container">
-                                    <h4>Langouste rôtie</h4>
+                                <div class="menu-card">
+                                    <h3>Langouste rôtie</h3>
                                     <div class="tasteandprice-txt">
                                         <p>Et ses légumes de saison</p>
-                                        <strong>35€</strong>
+                                        <strong class="price">35€</strong>
                                     </div>
                                 </div>
                                 <div class="check-box flexcenterXY">
                                     <i class="fa-solid fa-check check-icon"></i>
                                 </div>
-                            </button>
-                            <button>
-                                <div class="txt-container">
-                                    <h4>Côte de bœuf Angus</h4>
+                                <div class="menu-card">
+                                    <h3>Côte de bœuf Angus</h3>
                                     <div class="tasteandprice-txt">
                                         <p>Et sa purée de panais</p>
-                                        <strong>44€</strong>
+                                        <strong class="price">44€</strong>
                                     </div>
                                 </div>
                                 <div class="check-box flexcenterXY">
                                     <i class="fa-solid fa-check check-icon"></i>
                                 </div>
-                            </button>
                 </article>
                 <article class="menu-article">
-                    <h3>DESSERTS</h3>
-                            <button>
-                                <div class="txt-container">
-                                    <h4>Farandole de desserts</h4>
+                    <h2>DESSERTS</h2>
+                                <div class="menu-card">
+                                    <h3>Farandole de desserts</h3>
                                     <div class="tasteandprice-txt">
                                         <p>Du chef</p>
-                                        <strong>18€</strong>
+                                        <strong class="price">18€</strong>
                                     </div>
                                 </div>
                                 <div class="check-box flexcenterXY">
                                     <i class="fa-solid fa-check check-icon"></i>
                                 </div>
-                            </button>
-                            <button>
-                                <div class="txt-container">
-                                    <h4>Crème brulée</h4>
+                                <div class="menu-card">
+                                    <h3>Crème brulée</h3>
                                     <div class="tasteandprice-txt">
                                         <p>Revisitée</p>
-                                        <strong>22€</strong>
+                                        <strong class="price">22€</strong>
                                     </div>
                                 </div>
                                 <div class="check-box flexcenterXY">
                                     <i class="fa-solid fa-check check-icon"></i>
                                 </div>
-                            </button>
-                            <button>
-                                <div class="txt-container">
-                                    <h4>Tiramisu</h4>
+                                <div class="menu-card">
+                                    <h3>Tiramisu</h3>
                                     <div class="tasteandprice-txt">
                                         <p>À la noisette</p>
-                                        <strong>23€</strong>
+                                        <strong class="price">23€</strong>
                                     </div>
                                 </div>
                                 <div class="check-box flexcenterXY">
                                     <i class="fa-solid fa-check check-icon"></i>
                                 </div>
-                            </button>
                 </article>
             </div>
-            <button class="order-btn">
-                <a href="#NosRestaurants" class="txtDecorationNone flexcenterXY">
-                    <p>Commander</p>
-                </a>
-            </button>
-        </div>
+                <div class="order-btn">
+                    <button class="btn">Commander</button>
+                </div>
+            </div>
     </section>
 </main>
 <footer>
-    <div class="footer-logo">
-        <a href="index.html">ohmyfood</a>
-    </div>
-    <ul class="liste-style-none footer-list">
-        <li>
-            <a href="#">
-            <i class="fa-solid fa-utensils fa-xs"></i>
-            <p>Proposer un restaurant</p>
-        </a>
+    <a href="index.html" class="back-logo"><img src="../assets/images/logo/ohmyfood@2x.svg" class="footer-logo" alt="Logo OhMyFood"></a>
+<ul class="footer-list">
+    <li>
+        <a href="#" class="footer-txt-and-icon txt-decoration-none-white">
+        <i class="fa-solid fa-utensils fa-xs footer-icon"></i>
+        <p>Proposer un restaurant</p>
+    </a>
+    </li>
+    <li>
+        <a href="#" class="footer-txt-and-icon txt-decoration-none-white">
+        <i class="fa-solid fa-handshake-angle fa-xs footer-icon"></i>
+        <p>Devenir partenaire</p>
+    </a>
+    </li>
+    <li>
+    <a href="#" class="footer-txt-solo txt-decoration-none-white">
+        <p>Mentions légales</p>
+    </a>
         </li>
         <li>
-            <a href="#">
-            <i class="fa-solid fa-handshake-angle fa-xs"></i>
-            <p>Devenir partenaire</p>
-        </a>
-        </li>
-        <li>
-        <a href="#">Mentions légales</a>
-            </li>
-            <li>
-            <a href="#">Contact</a>
-        </li>
-    </ul>
-</div>
+    <a href="mailto:support@ohmyfood.com" class="footer-txt-solo txt-decoration-none-white">Contact</a>
+    </li>
+</ul>
 </footer>
 </body>
 </html>

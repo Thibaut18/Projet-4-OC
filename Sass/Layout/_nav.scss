@@ -1,6 +1,13 @@
 nav {
     height: 60px;
     @include flexcenterXY;
+    .arrow-left {
+        @include text-decoration-none;
+        position: absolute;
+        top: 19px;
+        left: 28px;
+        font-size: 21px;
+    }
     .logo {
         width: 162px;
         height: 44px;
