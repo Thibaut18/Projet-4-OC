@@ -3,29 +3,70 @@
     padding: 45px 12px 0px 12px;
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 28px; 
+    @include desktop-only {
+        height: 220px;
+        padding: 45px 20px 0px 20px;
+    }
     .working-title {
         padding-left: 20px;
+        @include desktop-only {
+            padding-left: 100px;
+        }
     }
     .list-style {
         display: flex;
         flex-direction: column;
         gap: 25px;
         padding-left: 20px;
+        @include desktop-only {
+            flex-direction: row;
+            gap: 35px;
+            padding-left: 95px;
+            padding-right: 95px;
+            height: 34%;
+            width: 100%;
+            gap: 30px;
+        }
     }
         li {
             width: 95%;
             height: 72.38px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
             border-radius: 20px;
-            padding-left: 12px;
+            padding-left: 25px;
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 18px;
             font-weight: 500;
             font-size: 16px;
-            line-height: 19px;
             background-color: $background;
+            .purple-icon:hover {
+                color: $primary-color;
+            }
+            .numbers {
+                display: block;
+                background-color: $primary-color;
+                color: $white;
+                position: absolute;
+                text-align: center;
+                left: 20px;
+                padding: 3px 8px 3px 8px;
+                border-radius: 50%;
+                @include desktop-only {
+                    display: flex;
+                    position: relative;
+                    left: -10px;
+                }
+            }
+            @include desktop-only {
+                height: 100%;
+                width: 100%;
+                padding-left: 0px;
+                font-size: 14px;
+                gap: 12px;
+
+            }
         }
 
 }

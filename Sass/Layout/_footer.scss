@@ -1,6 +1,11 @@
 footer {
     background-color: $darkgrey;
-    padding: 20px 0px 20px 18px;
+    padding: 8px 0px 20px 18px;
+    @include desktop-only {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 50px;
+    }
     .back-logo {
         height: 45px;
         display: block;
@@ -10,25 +15,55 @@ footer {
         height: 45px;
     }
 }
-    .footer-list {
+    .footer-list-container {
         display: flex;
         flex-direction: column;
         gap: 5px;
         list-style: none;
         margin: 0px;
-        padding: 0px;
-        li  .footer-txt-and-icon {
-            display: flex;
+        padding: 4px 0px 12px 0px;
+        @include desktop-only {
             flex-direction: row;
-            align-items: center;
-            width: 100%;
-            font-weight: bold;
+            padding-right: 45px;
+            padding-top: 10px;
+            @include flexcenterXY;
+        }
+        .footer-first-list {
+            display: flex;
+            flex-direction: column;
             gap: 8px;
-            font-size: 14px;
+            @include desktop-only {
+                flex-direction: row;
+                padding-right: 20px;
+            }
+            li  .footer-txt-and-icon {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                font-weight: bold;
+                gap: 8px;
+                font-size: 14px;
+            @include desktop-only {
+                padding-right: 8px;
+            }
         }
-        li .footer-txt-solo {
-            font-size: 14px;
+    }
+        .footer-second-list {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            @include desktop-only {
+                flex-direction: row;
+                gap: 12px;
+            }
+            li .footer-txt-solo {
+                font-size: 14px;
+                @include desktop-only {
+                    display: flex;
+                }
         }
+    }
     }
 }
 

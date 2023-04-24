@@ -5,6 +5,27 @@
         gap: 18px;
         padding: 52px 12px 0px 12px;
         height: 1145px;
+        @include desktop-only {
+            height: 620px;
+            padding: 35px 100px 0px 100px;
+        }
+        .restaurant-title {
+        padding-bottom: 5px;
+        padding-left: 84px;
+        @include desktop-only {
+            padding-left: 20px;
+        }
+        }
+        .restaurants-container-card {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @include desktop-only {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 38px;
+            }
         .restaurant-card {
             display: flex;
             flex-direction: column;
@@ -12,6 +33,9 @@
             height: 230px;
             border-radius: 15px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            @include desktop-only {
+                width: 44%;
+            }
             .card {
                 width: 100%;
                 height: 100%;
@@ -69,6 +93,7 @@
                         right: 20px;
                         font-size: 26px;
                     }
+                }
                 }
             }
         }
