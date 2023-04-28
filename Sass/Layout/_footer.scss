@@ -30,13 +30,13 @@ footer {
         }
         .footer-first-list {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             gap: 8px;
             @include desktop-only {
                 flex-direction: row;
                 padding-right: 20px;
             }
-            li  .footer-txt-and-icon {
+            .footer-txt-and-icon {
                 display: flex;
                 flex-direction: row;
                 align-items: center;

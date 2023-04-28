@@ -1,5 +1,12 @@
+:root {
+    --purple: #9356DC;
+	--pink: #FF79DA;
+	--green: #99E2D0;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    pointer-events: auto;
 }
