@@ -221,7 +221,7 @@ footer {
   background-color: #353535;
   padding: 8px 0px 20px 18px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -245,7 +245,7 @@ footer .footer-list-container {
   margin: 0px;
   padding: 4px 0px 12px 0px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   footer .footer-list-container {
     flex-direction: row;
     padding-right: 45px;
@@ -260,7 +260,7 @@ footer .footer-list-container .footer-first-list {
   flex-direction: row;
   gap: 8px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   footer .footer-list-container .footer-first-list {
     flex-direction: row;
     padding-right: 20px;
@@ -275,7 +275,7 @@ footer .footer-list-container .footer-first-list .footer-txt-and-icon {
   gap: 8px;
   font-size: 14px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   footer .footer-list-container .footer-first-list .footer-txt-and-icon {
     padding-right: 8px;
   }
@@ -285,7 +285,7 @@ footer .footer-list-container .footer-second-list {
   flex-direction: column;
   gap: 4px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   footer .footer-list-container .footer-second-list {
     flex-direction: row;
     gap: 12px;
@@ -294,7 +294,7 @@ footer .footer-list-container .footer-second-list {
 footer .footer-list-container .footer-second-list li .footer-txt-solo {
   font-size: 14px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   footer .footer-list-container .footer-second-list li .footer-txt-solo {
     display: flex;
   }
@@ -314,7 +314,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   height: 225px;
   object-fit: cover;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .menu img {
     height: 390px;
   }
@@ -325,7 +325,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   position: relative;
   margin-top: -44px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .menu .menu-full-box {
     justify-content: center;
     margin-left: 190px;
@@ -341,7 +341,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
 .menu .menu-full-box .menu-container {
   padding: 0px 12px 40px 12px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .menu .menu-full-box .menu-container {
     padding: 0px 220px 40px 220px;
   }
@@ -352,7 +352,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   font-size: 20px;
   padding: 30px 25px 0px 16px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .menu .menu-full-box .menu-container .title-and-like-icon {
     font-size: 28px;
     display: flex;
@@ -363,7 +363,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
 .menu .menu-full-box .menu-container .title-and-like-icon .like-icon {
   padding-top: 7px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .menu .menu-full-box .menu-container .title-and-like-icon .like-icon {
     padding: 0px 0px 0px 25px;
   }
@@ -500,7 +500,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   flex-direction: column;
   gap: 28px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .working-container {
     height: 220px;
     padding: 45px 90px 0px 90px;
@@ -509,7 +509,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
 .working-container .working-title {
   padding-left: 8px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .working-container .working-title {
     padding-left: 100px;
   }
@@ -520,7 +520,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   gap: 25px;
   padding-left: 20px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .working-container .list-style {
     flex-direction: row;
     gap: 35px;
@@ -548,7 +548,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   color: #9356DC;
   transition: color 0.3s ease-in-out;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .working-container li .purple-icon {
     font-size: 17px;
   }
@@ -563,14 +563,14 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   padding: 3px 8px 3px 8px;
   border-radius: 50%;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .working-container li .numbers {
     display: flex;
     position: relative;
     left: -10px;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .working-container li {
     height: 100%;
     width: 100%;
@@ -588,7 +588,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   padding: 52px 12px 0px 12px;
   height: 1145px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .restaurants-container {
     height: 620px;
     padding: 35px 150px 0px 150px;
@@ -598,7 +598,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   padding-bottom: 5px;
   padding-left: 8px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .restaurants-container .restaurant-title {
     padding-left: 35px;
   }
@@ -608,7 +608,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   flex-direction: column;
   gap: 20px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .restaurants-container .restaurants-container-card {
     flex-direction: row;
     flex-wrap: wrap;
@@ -624,7 +624,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .restaurants-container .restaurants-container-card .restaurant-card {
     width: 44%;
   }
