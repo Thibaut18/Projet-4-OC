@@ -14,7 +14,7 @@ animation-delay: 3s;
   .loader-logo {
     font-family: "Shrikhand";
     font-size: 32px;
-    animation: lefttoright 2s cubic-bezier(0.76, -0.15, 0.19, 1.44);
+    animation: lefttoright 2s ease-in-out;
     -webkit-background-clip: text;
   }
   .letter-1 {

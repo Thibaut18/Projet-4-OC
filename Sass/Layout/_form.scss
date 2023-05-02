@@ -8,6 +8,7 @@
     .search-bar {
         background: none;
         border: none;
+        outline: none;
         &::placeholder {
             color: $black;
             font-weight: bold;
