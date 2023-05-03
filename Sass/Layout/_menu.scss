@@ -6,7 +6,7 @@
         height: 225px;
         object-fit: cover;
         @include desktop-only {
-            height: 390px; 
+            height: 390px;
         }
     }
     .menu-full-box {
@@ -20,141 +20,145 @@
             margin-right: 190px;
         }
 
-    .order-btn {
-        @include flexcenterXY;
-        padding-bottom: 55px;
-    }
-    .menu-container {
-        padding: 0px 12px 40px 12px;
-        @include desktop-only {
-            padding: 0px 220px 40px 220px;
+        .order-btn {
+            @include flexcenterXY;
+            padding-bottom: 55px;
         }
-        .title-and-like-icon {
-            display: flex;
-            justify-content: space-between;
-            font-size: 20px;
-            padding: 30px 25px 0px 16px;
+        .menu-container {
+            padding: 0px 12px 40px 12px;
             @include desktop-only {
-                font-size: 28px;
-                @include flexcenterXY;
+                padding: 0px 220px 40px 220px;
             }
-        .like-icon {
-            padding-top: 7px;
-            @include desktop-only {
-                padding: 0px 0px 0px 25px;
-            }
-            &:hover {
-                cursor: pointer;
-                background-image: linear-gradient(193.33deg, 
-                $primary-color -11.44%, $secondary-color 123.93%);
-                -webkit-background-clip: text;
-                color: transparent;
-                border: none;
-                font-weight: bold;
-                transition: all 0.5s;
-                transition-timing-function: ease-in-out;
-            }
-            }
-        }
-        .menu-animation {
-            .first-child {
-                opacity: 0;
-                animation: fade-in 1.4s ease-in-out forwards, move-up 1s ease-in-out forwards;
-                animation-delay: 0.2s;
-            }
-            .second-child {
-                opacity: 0;
-                animation: fade-in 1.4s ease-out forwards, move-up 1s ease-in-out forwards;
-                animation-delay: 0.5s;
-            }
-            .third-child {
-                opacity: 0;
-                animation: fade-in 1.4s ease-out forwards, move-up 1s ease-in-out forwards;
-                animation-delay: 0.7s;
-            }
-        .menu-article {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            .menu-card {
-                height: 60px;
-                width: 100%;
-                background: #F7F7F7;
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-                border-radius: 15px;   
-                position: relative;
-                padding: 9px 0px 9px 12px;
-                &:hover .check-box {
+            .title-and-like-icon {
+                display: flex;
+                justify-content: space-between;
+                font-size: 20px;
+                padding: 30px 25px 0px 16px;
+                @include desktop-only {
+                    font-size: 28px;
                     @include flexcenterXY;
-                    position: absolute;
-                    bottom: 0px;
                 }
-                &:hover .tasteandprice-txt {
-                    padding-right: 60px;
-                    transition: 0.5s ease;
+                .like-icon {
+                    padding-top: 7px;
+                    @include desktop-only {
+                        padding: 0px 0px 0px 25px;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background-image: linear-gradient(193.33deg, $primary-color -11.44%, $secondary-color 123.93%);
+                        -webkit-background-clip: text;
+                        color: transparent;
+                        border: none;
+                        font-weight: bold;
+                        transition: all 0.5s;
+                        transition-timing-function: ease-in-out;
+                    }
                 }
-                h3 {
-                    padding-bottom: 4px;
+            }
+            .menu-animation {
+                .first-child {
+                    opacity: 0;
+                    animation: fade-in 1.4s ease-in-out forwards, move-up 1s ease-in-out forwards;
+                    animation-delay: 0.2s;
                 }
-                .tasteandprice-txt {
+                .second-child {
+                    opacity: 0;
+                    animation: fade-in 1.4s ease-out forwards, move-up 1s ease-in-out forwards;
+                    animation-delay: 0.5s;
+                }
+                .third-child {
+                    opacity: 0;
+                    animation: fade-in 1.4s ease-out forwards, move-up 1s ease-in-out forwards;
+                    animation-delay: 0.7s;
+                }
+                .menu-article {
                     display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    .price {
-                        padding-right: 12px;
-                    }
-                    }
-                    .check-box {
-                        display: none;
-                        background: #99E2D0;
-                        border-radius: 0 15px 15px 0;
-                        right: 0px;
-                        bottom:20px;
-                        padding: 0 1rem;
-                        height: 60px; 
-                        transition: all 0.3s;
-                        .check-icon {
-                            border-radius: 50%;
-                            background-color: $white;
-                            color: $tertiary-color;
-                            padding: 5px 5px 5px 5px;
-                            animation: rotate 0.5s ease-out;
+                    flex-direction: column;
+                    gap: 8px;
+                    .menu-card {
+                        height: 60px;
+                        width: 100%;
+                        background: #f7f7f7;
+                        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                        border-radius: 15px;
+                        position: relative;
+                        padding: 9px 0px 9px 12px;
+                        &:hover .check-box {
+                            @include flexcenterXY;
+                            position: absolute;
+                            bottom: 0px;
+                        }
+                        &:hover .tasteandprice-txt .price {
+                            padding-right: 70px;
+                            transition: 0.5s ease;
+                        }
+                        h3 {
+                            padding-bottom: 4px;
+                        }
+                        .tasteandprice-txt {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            p {
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                            .price {
+                                padding-right: 12px;
+                                padding-left: 20px;
+                            }
+                        }
+                        .check-box {
+                            display: none;
+                            background: #99e2d0;
+                            border-radius: 0 15px 15px 0;
+                            right: 0px;
+                            bottom: 20px;
+                            padding: 0 1rem;
+                            height: 60px;
+                            transition: all 0.3s;
+                            .check-icon {
+                                border-radius: 50%;
+                                background-color: $white;
+                                color: $tertiary-color;
+                                padding: 5px 5px 5px 5px;
+                                animation: rotate 0.5s ease-out;
+                                font-size: 15px;
+                            }
                         }
                     }
-                }   
-            }
+                }
             }
         }
     }
 }
 
 @keyframes fade-in {
-0% {
-    opacity: 0;
-}
+    0% {
+        opacity: 0;
+    }
 
-100% {
-    opacity: 1;
-}
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes move-up {
-    
-
-0% {
-    transform: translateY(45px);
-}
-100% {
-    transform: translateY(0);
-}
+    0% {
+        transform: translateY(45px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @keyframes rotate {
-0% {
-    transform: rotate(0);
-}
+    0% {
+        transform: rotate(0);
+    }
 
-100% {
-    transform: rotate(360deg);
-}
+    100% {
+        transform: rotate(360deg);
+    }
 }

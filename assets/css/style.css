@@ -67,7 +67,7 @@ body {
   backdrop-filter: blur(5px);
   width: 100%;
   height: 100%;
-  animation: fadeOut 0.3s;
+  animation: fade-out 0.3s;
   animation-fill-mode: forwards;
   animation-delay: 3s;
   display: flex;
@@ -152,7 +152,7 @@ body {
     transform: rotate(360deg);
   }
 }
-@keyframes fadeOut {
+@keyframes fade-out {
   0% {
     opacity: 1;
   }
@@ -401,7 +401,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
 .menu .menu-full-box .menu-container .menu-animation .menu-article .menu-card {
   height: 60px;
   width: 100%;
-  background: #F7F7F7;
+  background: #f7f7f7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   position: relative;
@@ -414,8 +414,8 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   position: absolute;
   bottom: 0px;
 }
-.menu .menu-full-box .menu-container .menu-animation .menu-article .menu-card:hover .tasteandprice-txt {
-  padding-right: 60px;
+.menu .menu-full-box .menu-container .menu-animation .menu-article .menu-card:hover .tasteandprice-txt .price {
+  padding-right: 70px;
   transition: 0.5s ease;
 }
 .menu .menu-full-box .menu-container .menu-animation .menu-article .menu-card h3 {
@@ -426,12 +426,18 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   flex-direction: row;
   justify-content: space-between;
 }
+.menu .menu-full-box .menu-container .menu-animation .menu-article .menu-card .tasteandprice-txt p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .menu .menu-full-box .menu-container .menu-animation .menu-article .menu-card .tasteandprice-txt .price {
   padding-right: 12px;
+  padding-left: 20px;
 }
 .menu .menu-full-box .menu-container .menu-animation .menu-article .menu-card .check-box {
   display: none;
-  background: #99E2D0;
+  background: #99e2d0;
   border-radius: 0 15px 15px 0;
   right: 0px;
   bottom: 20px;
@@ -445,6 +451,7 @@ footer .footer-list-container .footer-second-list li .footer-txt-solo {
   color: #99E2D0;
   padding: 5px 5px 5px 5px;
   animation: rotate 0.5s ease-out;
+  font-size: 15px;
 }
 
 @keyframes fade-in {
