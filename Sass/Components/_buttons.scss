@@ -9,10 +9,4 @@
     border: 0;
     color: white;
     text-decoration: none;
-    &:hover { 
-    transition: 0.5s;
-    transition-timing-function: ease-in-out;
-    transform: translateY(-6px);
-    background: linear-gradient(180deg, #ff88de, #9b63df);
-    }
 }

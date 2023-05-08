@@ -1,8 +1,8 @@
+/*loader*/
 .loader-container {
     position: fixed;
     z-index: 2;
-    background: transparent;
-    backdrop-filter: blur(5px);
+    background-color: $white;
     width: 100%;
     height: 100%;
     animation: fade-out 0.3s;
@@ -78,16 +78,68 @@
     }
 }
 
+/*menu-animations*/
+/*Entrées-PLats-Desserts*/
+.menu .menu-full-box .menu-container .menu-animation {
+    .first-child {
+        @include animation-menu(0.2s);
+    }
+    .second-child {
+        @include animation-menu(0.5s);
+    }
+    .third-child {
+        @include animation-menu(0.7s);
+    }
+}
+/*check-box*/
+.menu .menu-full-box .menu-container .menu-animation .menu-article .menu-card {
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover .check-box {
+            @include flexcenterXY;
+            position: absolute;
+            bottom: 0px;
+            transition: all 0.3s;
+            .check-icon {
+                animation: spin 0.5s ease-out;
+            }
+        }
+        &:hover .tasteandprice-txt .price {
+            padding-right: 70px;
+            transition: 0.5s ease;
+        }
+}
+/*Buttons*/
+.btn:hover {
+    &:hover { 
+        cursor: pointer;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+        transform: translateY(-6px);
+        background: linear-gradient(180deg, #ff88de, #9b63df);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+        }
+}
+/*heart-icon*/
+.heart-animation:hover {
+    cursor: pointer;
+    background-image: linear-gradient(193.33deg, $primary-color -11.44%, $secondary-color 123.93%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    transition: all 0.5s ease-out;
+}
+/*Keyframes*/
+/*Loader*/
 @keyframes spin {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
 }
-
 @keyframes fade-out {
     0% {
         opacity: 1;
@@ -96,12 +148,10 @@
         opacity: 0;
         transform: scale(1);
     }
-
     100% {
         transform: scale(0);
     }
 }
-
 @keyframes lefttoright {
     0% {
         transform: translateX(0);
@@ -117,3 +167,22 @@
         transform: translateX(0);
     }
 }
+/*Entrées-Plats-Desserts*/
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes move-up {
+    0% {
+        transform: translateY(45px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+

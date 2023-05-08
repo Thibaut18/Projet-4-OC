@@ -4,7 +4,7 @@
   "description": "p4",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./Sass/Main/main.scss:./assets/css/style.css"
+    "sass": "sass --watch ./Sass/Main/main.scss:./assets/css/style.css --style compressed"
   },
   "repository": {
     "type": "git",

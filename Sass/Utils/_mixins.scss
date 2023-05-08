@@ -14,3 +14,9 @@
     @content;
     }
 }
+
+@mixin animation-menu($animation-delay){
+    opacity: 0;
+    animation: fade-in 1.4s ease-out forwards, move-up 1s ease-in-out forwards;
+    animation-delay: $animation-delay;
+}

@@ -43,34 +43,9 @@
                     @include desktop-only {
                         padding: 0px 0px 0px 25px;
                     }
-                    &:hover {
-                        cursor: pointer;
-                        background-image: linear-gradient(193.33deg, $primary-color -11.44%, $secondary-color 123.93%);
-                        -webkit-background-clip: text;
-                        color: transparent;
-                        border: none;
-                        font-weight: bold;
-                        transition: all 0.5s;
-                        transition-timing-function: ease-in-out;
-                    }
                 }
             }
             .menu-animation {
-                .first-child {
-                    opacity: 0;
-                    animation: fade-in 1.4s ease-in-out forwards, move-up 1s ease-in-out forwards;
-                    animation-delay: 0.2s;
-                }
-                .second-child {
-                    opacity: 0;
-                    animation: fade-in 1.4s ease-out forwards, move-up 1s ease-in-out forwards;
-                    animation-delay: 0.5s;
-                }
-                .third-child {
-                    opacity: 0;
-                    animation: fade-in 1.4s ease-out forwards, move-up 1s ease-in-out forwards;
-                    animation-delay: 0.7s;
-                }
                 .menu-article {
                     display: flex;
                     flex-direction: column;
@@ -83,15 +58,6 @@
                         border-radius: 15px;
                         position: relative;
                         padding: 9px 0px 9px 12px;
-                        &:hover .check-box {
-                            @include flexcenterXY;
-                            position: absolute;
-                            bottom: 0px;
-                        }
-                        &:hover .tasteandprice-txt .price {
-                            padding-right: 70px;
-                            transition: 0.5s ease;
-                        }
                         h3 {
                             padding-bottom: 4px;
                         }
@@ -117,13 +83,11 @@
                             bottom: 20px;
                             padding: 0 1rem;
                             height: 60px;
-                            transition: all 0.3s;
                             .check-icon {
                                 border-radius: 50%;
                                 background-color: $white;
                                 color: $tertiary-color;
                                 padding: 5px 5px 5px 5px;
-                                animation: rotate 0.5s ease-out;
                                 font-size: 15px;
                             }
                         }
@@ -134,31 +98,3 @@
     }
 }
 
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes move-up {
-    0% {
-        transform: translateY(45px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
