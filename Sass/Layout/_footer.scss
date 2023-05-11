@@ -9,12 +9,12 @@ footer {
     .back-logo {
         height: 45px;
         display: block;
-    .footer-logo {
-        filter: invert(100%);
-        width: 90px;
-        height: 45px;
+        .footer-logo {
+            filter: invert(100%);
+            width: 90px;
+            height: 45px;
+        }
     }
-}
     .footer-list-container {
         display: flex;
         flex-direction: column;
@@ -44,26 +44,27 @@ footer {
                 font-weight: bold;
                 gap: 8px;
                 font-size: 14px;
-            @include desktop-only {
-                padding-right: 8px;
+                @include desktop-only {
+                    padding-right: 8px;
+                    font-size: 16px;
+                }
             }
         }
-    }
         .footer-second-list {
             display: flex;
             flex-direction: column;
             gap: 4px;
             @include desktop-only {
                 flex-direction: row;
-                gap: 12px;
+                padding-right: 6px;
             }
             li .footer-txt-solo {
                 font-size: 14px;
                 @include desktop-only {
                     display: flex;
                 }
+            }
         }
-    }
     }
 }
 

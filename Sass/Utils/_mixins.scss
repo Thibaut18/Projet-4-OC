@@ -9,14 +9,26 @@
     color: black;
 }
 
-@mixin desktop-only {
-    @media screen and (min-width: 800px) {
-    @content;
-    }
-}
-
-@mixin animation-menu($animation-delay){
+@mixin animation-menu($animation-delay) {
     opacity: 0;
     animation: fade-in 1.4s ease-out forwards, move-up 1s ease-in-out forwards;
     animation-delay: $animation-delay;
+}
+
+@mixin txt-ellipsis {
+    animation: txt-area-resizer 0.5s ease-out forwards;
+}
+
+/*Responsive*/
+
+@mixin desktop-only {
+    @media screen and (min-width: 800px) {
+        @content;
+    }
+}
+
+@mixin small-desktop {
+    @media screen and (min-width: 800px) and (max-width: 1300px) {
+        @content;
+    }
 }

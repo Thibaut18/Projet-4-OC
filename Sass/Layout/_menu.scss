@@ -19,7 +19,10 @@
             margin-left: 190px;
             margin-right: 190px;
         }
-
+        @include small-desktop {
+            margin-left: 140px;
+            margin-right: 140px;
+        }
         .order-btn {
             @include flexcenterXY;
             padding-bottom: 55px;
@@ -28,6 +31,10 @@
             padding: 0px 12px 40px 12px;
             @include desktop-only {
                 padding: 0px 220px 40px 220px;
+            }
+            @include small-desktop {
+                padding-left: 80px;
+                padding-right: 80px;
             }
             .title-and-like-icon {
                 display: flex;
@@ -50,6 +57,12 @@
                     display: flex;
                     flex-direction: column;
                     gap: 8px;
+                    h2 {
+                        padding-top: 30px;
+                        padding-bottom: 5px;
+                        border-bottom: 3px solid $tertiary-color;
+                        width: 40px;
+                    }
                     .menu-card {
                         height: 60px;
                         width: 100%;
@@ -60,6 +73,9 @@
                         padding: 9px 0px 9px 12px;
                         h3 {
                             padding-bottom: 4px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
                         }
                         .tasteandprice-txt {
                             display: flex;
@@ -97,4 +113,3 @@
         }
     }
 }
-

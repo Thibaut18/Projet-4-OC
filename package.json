@@ -1,15 +1,17 @@
 {
-  "name": "p-4",
+  "name": "Projet 4: Améliorez l'interface d'un site mobile avec des animations CSS",
   "version": "1.0.0",
-  "description": "p4",
+  "description": "Projet 4 Openclassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./Sass/Main/main.scss:./assets/css/style.css --style compressed"
+    "sass": "sass --watch ./Sass/Main/main.scss:./assets/css/style.css --style compressed",
+    "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Thibaut18/Projet-4-OC.git"
   },
   "author": "Teinturier Thibaut",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }
