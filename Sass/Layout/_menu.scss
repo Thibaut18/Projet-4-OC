@@ -73,18 +73,14 @@
                         padding: 9px 0px 9px 12px;
                         h3 {
                             padding-bottom: 4px;
-                            white-space: nowrap;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
+                            @include ellipsis;
                         }
                         .tasteandprice-txt {
                             display: flex;
                             flex-direction: row;
                             justify-content: space-between;
                             p {
-                                white-space: nowrap;
-                                overflow: hidden;
-                                text-overflow: ellipsis;
+                                @include ellipsis;
                             }
                             .price {
                                 padding-right: 12px;
