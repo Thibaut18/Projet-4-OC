@@ -106,11 +106,8 @@
             animation: spin 0.5s ease-out;
         }
     }
-    &:hover h3 {
-        @include txt-ellipsis;
-    }
-    &:hover p {
-        @include txt-ellipsis;
+    &:hover h3, &:hover p {
+        animation: txt-area-resizer 0.5s ease-out forwards;
     }
     &:hover .tasteandprice-txt .price {
         transform: translateX(-60px);
