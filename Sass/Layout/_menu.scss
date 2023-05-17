@@ -47,8 +47,15 @@
                 }
                 .like-icon {
                     padding-top: 7px;
+                    z-index: 1;
+                    position: relative;
+                    top: 4px;
+                    right: 0px;
+                    font-size: 24px;
                     @include desktop-only {
-                        padding: 0px 0px 0px 25px;
+                        top: 0;
+                        right: 0;
+                        padding: 0px 0px 0px 40px;
                     }
                 }
             }

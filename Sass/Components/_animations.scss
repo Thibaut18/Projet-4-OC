@@ -111,27 +111,61 @@
     }
     &:hover .tasteandprice-txt .price {
         transform: translateX(-60px);
-        transition: 0.5s ease-out;
+        transition: 0.5s ease;
     }
+    &:not(:hover) .check-box {
+            @include flexcenterXY;
+            position: absolute;
+            bottom: 0px;
+            animation: to-right 0.5s ease forwards;
+            transform-origin: right;
+        }
+        &:not(:hover) .tasteandprice-txt .price {
+            transform: translateX(0px);
+            transition: 0.5s ease-out;
+        }
 }
 /*Buttons*/
 .btn:hover {
-    &:hover {
         cursor: pointer;
-        transition: 0.5s;
+        transition: 1s;
         transition-timing-function: ease-in-out;
         background: linear-gradient(180deg, $btn-anim-first-color, $btn-anim-second-color);
         box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
     }
+.btn:not(:hover) {
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+    background: linear-gradient(180deg, $secondary-color 0%, $primary-color 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 /*heart-icon*/
-.heart-animation:hover {
-    cursor: pointer;
-    background-image: linear-gradient(193.33deg, $primary-color -11.44%, $secondary-color 123.93%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
+.like-icon {
+    &:hover {
+        color: $background;
+    }
+    .heart-animation {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        cursor: pointer;
+        background-image: linear-gradient(193.33deg, $primary-color -11.44%, $secondary-color 123.93%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    &:hover .heart-animation {
+    display: block;
     animation: fade-in 1.5s ease-in-out;
+}
+    &:not(:hover) .heart-animation {
+        display: flex;
+        position: absolute;
+        bottom: 0px;
+        animation: fade-out 1.5s ease-in-out forwards;
+}
 }
 /*Keyframes*/
 /*Loader*/
@@ -199,11 +233,30 @@
     }
 }
 
+@keyframes to-right {
+    0% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(0);
+    }
+}
+
 @keyframes txt-area-resizer {
     0% {
         width: 100%;
     }
     100% {
         width: 65%;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }
